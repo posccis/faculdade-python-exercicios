@@ -1,0 +1,17 @@
+Rodar um for dentro de outro
+exemplor:
+    10 * 2
+    for i in range(2):
+        for in range(10):
+        valor += 1
+
+inputs:
+    ope = "stringo"
+    while ope != "":
+        results = []
+
+        ope, valor_a, valor_b = input().split()
+        if ope == "Mult":
+            results.append(Mult(int(valor_a), int(valor_b)))
+        elif ope == "Soma"?
+            results.append(Soma(int(valor_a), int(valor_b)))
