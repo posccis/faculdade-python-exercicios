@@ -15,3 +15,38 @@ inputs:
             results.append(Mult(int(valor_a), int(valor_b)))
         elif ope == "Soma"?
             results.append(Soma(int(valor_a), int(valor_b)))
+
+A escada precisa de 10s pra levar uma pessoa
+ela começa no segundo 0 e acaba no 10
+
+0 --------- 10
+Se a pessoa entrou no segundo 1, ela vai chegar ao outro nivel 10s depois
+se outra pessoa entra no segundo 2, ela vai levar 10s depois, porem os 10s da
+primeira pessoa ja está contando, ou seja, 11s
+e se uma terceita pessoa entra os 3s, ela também vai precisar de 10 segundos
+dentro dos 10s da primeira pessoa que ligou a escada, ou seja, 12s
+
+
+A escada inicia com 0 1 2 3 4 5 6 7 8 9 10 segundos de atividade
+se alguem passa no 1 segundo, ela avai chegar ao proximo nivel no segundo 10
+se a pessoa passa um segundo depois, ela vai chegar um segundo depois ou seja, no segundo 11 no caso do 2
+se a pessoa passa dois segundos depois, ela vai chegar dois segundos depois, caso 3 chegará no 12
+A escada de inicio sempre ficará pelo menos 10s segundos ligada e
+a cada instante de segundo que alguem passa, aumenta aquela quantidade de segundos
+Por exemplo, caso a escada esteja a 5 segundos ligada e alguem passa aos 5 segundos,
+a escada só vai desligar após 15s e se alguem passa aos 10s, aumentará mais 5s e assim vai
+
+0 1 2 3 4 5* 6 7 8 9 10* 11 12 13 14 15 16 17* 18 19
+20* 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39
+
+0 1 2 3 4 5 6 7 8 9 10 11 12
+
+Aparentemente a função deve subtrair os segundos iniciais para dar o tempo total
+ou seja, ela deve ignorar os segundos que a escada passou sem atividade
+
+Para chegar aos segundos que a escada passou ativa, ele tem que pegar a diferença (O proximo elemento menos o anterior) e somar ao total
+e ao final, subtrair o primeiro elemento do total
+E como fazer para a função reconhecer que tem que reiniciar a contagem ao ter a diferença de 10s entre um valor e outro?
+usar um if statment para checar a se a diferença é menor ou igual a 10
+se for exatamente 10, vai continuar a contagem, mas se for maior que 10 a contagem reinicia
+e caso o total seja inferior a 10 a função deve somar 10 ao total.
