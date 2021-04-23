@@ -50,3 +50,10 @@ E como fazer para a função reconhecer que tem que reiniciar a contagem ao ter 
 usar um if statment para checar a se a diferença é menor ou igual a 10
 se for exatamente 10, vai continuar a contagem, mas se for maior que 10 a contagem reinicia
 e caso o total seja inferior a 10 a função deve somar 10 ao total.
+
+Preciso criar uma função que para cada possivel 'n' ele chame a f(n) e tal função conte cada chamada e retorne ela
+na entrada vou usar um for loop com o valor de entradas que o usuario irá colocar
+
+Tenho que criar uma função que chama a si mesmo, uma função recursiva
+
+Falta configurar a saida e preparar o codigo para mais uma caso
