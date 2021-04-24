@@ -35,6 +35,7 @@ if entrada >= 1 and entrada <= 100:
         for j in range(int(value_a), int(value_b)+1): 
             #chamada da função
             listo.append(f_n(j))
+            
             c = 0
         #....
 
